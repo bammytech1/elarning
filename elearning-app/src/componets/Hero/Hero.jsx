@@ -2,12 +2,18 @@
 import heroImage from '../../assets/pic.svg';
 import "./Hero.scss";
 
+// import { useState } from 'react';
 import { HashLink as Link } from "react-router-hash-link";
 import { motion} from "framer-motion";
 
+
+
+
 const Hero = () => {
+
+
   return (
-    <div className="hero-section">
+    <div  className="hero-section">
         <div className="container">
             <motion.picture
             initial={{x: "2rem", opacity: 0}}
@@ -30,7 +36,10 @@ const Hero = () => {
                 <h1>We Help <br></br> TO Build Your Dream Project</h1>
                 <p>Elearning provides a full service range including technical skils, design, business understanding</p>
                 <div className="btn-group">
-                    <Link className="btn-sec" to='/'>HOW WE WORK</Link>
+                    <motion.div 
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="btn-sec" to='#howWeWork'><Link to="#howWeWork">HOW WE WORK</Link></motion.div>
                     <Link className='btn-opt' to='/'>Contact Us</Link>
                 </div>
             </motion.div>

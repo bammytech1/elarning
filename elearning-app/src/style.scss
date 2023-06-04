@@ -75,6 +75,9 @@ h5 {
   font-size: .8rem;
   outline: none;
   border-radius: .2em;
+  a {
+    color: var(--light);
+  }
 }
 
 .btn-opt {

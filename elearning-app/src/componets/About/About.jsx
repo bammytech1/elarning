@@ -4,17 +4,37 @@ import "./About.scss";
 
 import { HashLink as Link } from 'react-router-hash-link';
 import CountUp from "react-countup";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
+
+const aboutVariants = {
+  offscreen: {
+    y: 300
+  },
+  onscreen: {
+    y: 0,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+};
 
 
 function About() {
   return (
-    <div id="about" className="about-section">
+    <motion.div
+    variants={aboutVariants}
+    initial="offscreen"
+    whileInView="onscreen"
+     id="about" className="about-section">
         <div className="about-container">
             <motion.picture
             initial={{x: "2rem", opacity: 0}}
             animate={{x: 0, opacity: 1}}
             transition = {{
+              delay: 1.9,
               duration: 2,
               type: "spring"
             }}>
@@ -45,7 +65,7 @@ function About() {
               </ul>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
