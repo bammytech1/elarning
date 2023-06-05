@@ -26,8 +26,9 @@ function Header() {
             <Link onClick={() => closeMenu()}  to='/#' smooth><img className="logo" src={logo} alt="dd" /></Link>
             <div className={show ? "links active" : "links"}>
                 <Link onClick={() => showMenu()} to='#about' smooth>About</Link>
-                <Link onClick={() => showMenu()} to='#howWeWork'>Service</Link>
-                <Link onClick={() => showMenu()} to='/'>Pricing</Link>
+                <Link onClick={() => showMenu()} to='#service'>Service</Link>
+                <Link onClick={() => showMenu()} to='#pricing'>Pricing</Link>
+                <Link onClick={() => showMenu()} to='#portfolio'>Porfolio</Link>
                 <Link to='#contact' className="btn-pry">CONTACT</Link>
             </div>
             <motion.div

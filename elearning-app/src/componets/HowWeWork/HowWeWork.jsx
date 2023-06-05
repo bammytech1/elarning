@@ -26,7 +26,7 @@ const cardVariants = {
 
 
 function HowWeWork() {
-const [ showVideo, setShowVideo] = useState(true);
+const [ showVideo, setShowVideo] = useState(false);
 
 
 function watchVideo() {
@@ -83,7 +83,7 @@ console.log(watchVideo);
                 <p>VIDEO REEL</p>
                 <motion.img
                 whileHover={{ scale: 1.5 }}
-                whileTap={{ scale: 0.9, x: 400, delay:100 }} 
+                whileTap={{ scale: 0.9, bounce:3, x: 10, delay:100 }} 
                 whileInView={{ scale: 1 }}
                 onClick={() => watchVideo()} src={play} alt="" />
                 <h3>Unlock the Greatest Value Possible</h3>

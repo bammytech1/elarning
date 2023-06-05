@@ -6,6 +6,11 @@
     color: var(--light);
     display: flex;
     flex-direction: column;
+    h4 {
+        font-size: .8rem;
+        line-height: 32px;
+        letter-spacing: 3px;
+    }
     .folio-container {
         display: flex;
         flex-direction: column;
@@ -13,12 +18,6 @@
         gap: 1em;
         
         // padding: .5em 1.5em;
-        h4 {
-            text-align: left;
-            font-size: .8rem;
-            line-height: 32px;
-            letter-spacing: 3px;
-        }
         .card-item {
             margin-top: 2em;
             position: relative;
@@ -48,6 +47,28 @@
             }
         }
     }
+    .get-started {
+        max-width: 1200px;
+        padding: 1em 2em;
+        margin: 2em;
+        background-color: var(--light);
+        display: grid;
+
+        .get-started-info {
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            gap: 1em;
+            a {
+                max-width: 8em;
+            }
+
+            h3 {
+                font-size: 2rem;
+                color: var(--dark);
+            }
+        }
+    }
 }
 
 
@@ -65,21 +86,55 @@
             // background-color: aqua;
             max-width: 1200px;
 
-            .card-item {
-                display: flexbox;
-                flex-wrap: wrap;
-            }
+            display: grid;
+            column-gap: 2em;
+            row-gap: .5em;
+            grid-template-columns: repeat(2, 1fr);
+            padding-block: 2rem;
+            margin-inline: auto;
 
             } 
+            .get-started {
+                max-width: 1150px;
+                position: relative;
+                grid-template-columns: 1fr 1fr 1fr;
+                place-items: center;
+                margin-top: 15em;
+
+                .connect-image {
+                    position: absolute;
+                    width: 300px;
+                    right: 2em;
+                    bottom: 0;
+                }
+            }
     }
     
 }
 
 @media only screen and (max-width:600px) {
-   
+   .folio-section {
+    place-items: center;
+    padding-top: 2em;
+   }
     .folio-container {
         margin-top: 1em;
         padding: 3em 2em;
+        
+    }
+    .get-started {
+        padding: 2em 2em 0 2em;
+
+        .connect-image {
+            order: -1;
+        }
+        img {
+            max-width: 500px;
+        }
+        .get-started-info {
+            
+            order: 1;
+        }
     }
 
 }

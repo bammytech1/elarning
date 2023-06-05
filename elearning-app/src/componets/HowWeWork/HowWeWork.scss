@@ -159,6 +159,9 @@
 
     .video-container {
         height: 200px;
+        video{
+            height: inherit;
+        }
     }
     .how-container {
         padding: 3em 2em;

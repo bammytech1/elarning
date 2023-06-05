@@ -12,6 +12,7 @@
     align-items: center;
     padding: 1em 0;
     position: fixed;
+    z-index: 100;
     .nav {
         background-color: var(--pry-color);
         
