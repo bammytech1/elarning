@@ -34,7 +34,6 @@ function watchVideo() {
     setShowVideo(!showVideo)
   )
 }
-console.log(watchVideo);
 
   return (
     <motion.div
