@@ -4,6 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import "./HowWeWork.scss";
 import play from "../../assets/play.png";
 import playVideo from "../../assets/music-preview.mp4"
+import playVid from "../../assets/pexels-mikhail-nilov-7534244-1920x1080-25fps.mp4"
 import { motion } from "framer-motion";
 import { useState } from "react";
 // import Videoplay from "../../videoplayer/Videoplay";
@@ -71,15 +72,15 @@ function watchVideo() {
         whileInView={{ scale: 1 }}
         className="video-container">
             {/* < Videoplay /> */}
-            <video muted loop autoPlay playsInline controls width="100%" >
-                    <source  src={playVideo} type="video/webm" />
-                    <source allow="autoplay" src={playVideo} type="video/mp4"/>
+            <video muted loop autoPlay playsInline width="100%" >
+                    <source  src={playVid} type="video/webm" />
+                    <source allow="autoplay" src={playVid} type="video/mp4"/>
             </video>
-            {showVideo && <div className="video-show"><iframe width="100%" height="562.50px" src="https://www.youtube.com/embed/qzM0nQerybg?start=122" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            {showVideo && <div className="video-show"><iframe width="100%" height="562.50px" src={playVideo} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
             </iframe></div>}
             <div className="overlay">
-                <p>VIDEO REEL</p>
+                {/* <p>VIDEO REEL</p> */}
                 <motion.img
                 whileHover={{ scale: 1.5 }}
                 whileTap={{ scale: 0.9, bounce:3, x: 10, delay:100 }} 

@@ -7,6 +7,7 @@
     .splide__slide {
         display: flex;
         flex-direction: column;
+        align-items: center !important;
         // margin-right: 0 !important;
     }
 }
@@ -113,6 +114,7 @@
     .card-info {
         height: 300px !important;
     }
+    
 }
 
 

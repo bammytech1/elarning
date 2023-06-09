@@ -30,10 +30,9 @@
         z-index: 5;
     }
     .links {
-
+        
         a {
-            margin-right: 1em;
-            position: relative;
+            // position: relative;
             text-decoration: none;
             color: var(--light);
             padding: 1em;
@@ -74,6 +73,10 @@
 @media screen and (min-width: 600px){
     .menu-icon {
         display: none;
+    }
+    .links {
+        display: flex;
+        justify-content: space-between;
     }
     
 }

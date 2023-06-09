@@ -11,10 +11,12 @@ import FeedBack from './componets/Feedback/FeedBack';
 import Pricing from './componets/Pricing/Pricing';
 import Faq from './componets/FAQ/Faq';
 import ReachUs from './componets/ReachUs/ReachUs';
+import Footer from './componets/Footer/Footer';
 // import Slider from './Slider/Slider';
 
 import './style.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ContactUS from './componets/Contact/ContactUs';
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
       <Pricing />
       <Faq />
       <ReachUs />
+      <ContactUS />
+      <Footer />
     </Router>
   )
 }

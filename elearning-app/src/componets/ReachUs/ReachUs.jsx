@@ -2,6 +2,7 @@ import "./ReachUs.scss";
 import phone from "../../assets/phone-icon.svg"
 import email from "../../assets/email-icon.svg"
 import address from "../../assets/address-icon.svg"
+import bkVideo from "../../assets/reachus.mp4"
 
 
 
@@ -52,6 +53,10 @@ function ReachUs() {
 
   return (
     <div className="reach-us-container">
+        <video className="bkvideo" playsInline loop muted autoPlay>
+            <source src={bkVideo} />
+        </video>
+                
         <div className="reach-us-content">
         {Object.keys(inputsError).length === 0 && isSubmit ? (<div className="success">Message sent Successfully</div>) : null 
         }
