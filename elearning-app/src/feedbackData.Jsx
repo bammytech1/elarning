@@ -1,3 +1,4 @@
+import feedPic from "../src/assets/ceo-avatar.svg";
 
 
 
@@ -7,7 +8,7 @@ const  feedbackData = [
         rating: "5.0",
         name: "Ashton Cox",
         comment: "Thank you elearing for the website develope for our organisation. we love your company and we wont stop patronizing you",
-        avatar: "./ceo-avatar.svg",
+        avatar: feedPic,
         company: "AAUA",
 
     },
@@ -16,7 +17,7 @@ const  feedbackData = [
         rating: "5.0",
         name: "Ashton Cox",
         comment: "Thank you elearing for the website develope for our organisation. we love your company and we wont stop patronizing you",
-        avatar: "./ceo-avatar.svg",
+        avatar: feedPic,
         company: "AAUA",
 
     },
@@ -25,7 +26,7 @@ const  feedbackData = [
         rating: "5.0",
         name: "Ashton Cox",
         comment: "Thank you elearing for the website develope for our organisation. we love your company and we wont stop patronizing you",
-        avatar: "./ceo-avatar.svg",
+        avatar: feedPic,
         company: "AAUA",
 
     },
@@ -34,7 +35,7 @@ const  feedbackData = [
         rating: "5.0",
         name: "Ashton Cox",
         comment: "Thank you elearing for the website develope for our organisation. we love your company and we wont stop patronizing you",
-        avatar: "./ceo-avatar.svg",
+        avatar: feedPic,
         company: "AAUA",
 
     }
