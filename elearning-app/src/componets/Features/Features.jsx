@@ -27,7 +27,6 @@ function Features() {
         </div>
         <div className="features-container-2">
             <div className="features-more">
-                <h4>FEATURES</h4>
                 <p>Long run, and work as an extension of the marchants team</p>
                 <Link to="/">Read More</Link>
             </div>

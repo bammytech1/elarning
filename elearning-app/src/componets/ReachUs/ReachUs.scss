@@ -1,0 +1,95 @@
+
+.reach-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: aqua;
+    width: 100%;
+    
+    .reach-us-content {
+        margin-bottom: 2em;
+        width: 100%;
+        max-width: 470px;
+        background-color: white;
+        padding: 2em;
+        h3 {
+            align-self: flex-start;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: .5em;
+        }
+        
+        form {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 1em;
+            border: 1px solid var(--dark);
+            border-radius: .5em;
+            input, textarea {
+                width: 100%;
+                border-radius: .5em;
+                padding: 1em;
+                outline: none;
+                border: 1px solid var(--dark);
+                // border: none;
+            }
+        }
+    }
+}
+
+.reach-us-container-2 {
+    display: flex;
+    gap: 2em;
+    .reach-us-2 {
+        padding: 0 2em;
+        display: flex;
+        flex-direction: column;
+        p {
+            line-height: 2rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .col-dis {
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            border: 1px solid var(--pry-color);
+            .row-dis {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+            }
+
+            img {
+                width: 40px;
+            }
+        }
+        .col-dis:not(:last-child) {
+            border-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+    
+    .reach-us-container-2 {
+        width: 100%;
+        max-width: 1200px;
+        .reach-us-2 {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .col-dis:not(:last-child) {
+            border-right: 0;
+        }
+    }
+    img {
+        width: 64px !important;
+    }
+}

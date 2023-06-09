@@ -17,7 +17,6 @@
         align-items: center;
         gap: 1em;
         
-        // padding: .5em 1.5em;
         .card-item {
             margin-top: 2em;
             position: relative;
@@ -49,7 +48,7 @@
     }
     .get-started {
         max-width: 1200px;
-        padding: 1em 2em;
+        padding: 1em 2em 0 2em;
         margin: 2em;
         background-color: var(--light);
         display: grid;
@@ -57,10 +56,10 @@
         .get-started-info {
             display: flex;
             flex-direction: column;
-            justify-content:space-between;
+            place-items: flex-start;
             gap: 1em;
             a {
-                max-width: 8em;
+                max-width: 9em;
             }
 
             h3 {
@@ -95,7 +94,7 @@
 
             } 
             .get-started {
-                max-width: 1150px;
+                max-width: 1120px;
                 position: relative;
                 grid-template-columns: 1fr 1fr 1fr;
                 place-items: center;
@@ -112,6 +111,8 @@
     
 }
 
+//mobile view
+
 @media only screen and (max-width:600px) {
    .folio-section {
     place-items: center;
@@ -123,17 +124,18 @@
         
     }
     .get-started {
-        padding: 2em 2em 0 2em;
+        // padding: 2em 2em 0 0em;
 
         .connect-image {
-            order: -1;
+            order: 1;
         }
         img {
             max-width: 500px;
+            object-fit: contain;
         }
         .get-started-info {
             
-            order: 1;
+            order: -1;
         }
     }
 

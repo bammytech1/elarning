@@ -7,6 +7,10 @@ import HowWeWork from './componets/HowWeWork/HowWeWork';
 import Features from './componets/Features/Features';
 import Service from './componets/Service/Service';
 import Portfolio from './componets/Portfolio/Portfolio';
+import FeedBack from './componets/Feedback/FeedBack';
+import Pricing from './componets/Pricing/Pricing';
+import Faq from './componets/FAQ/Faq';
+import ReachUs from './componets/ReachUs/ReachUs';
 // import Slider from './Slider/Slider';
 
 import './style.scss';
@@ -25,6 +29,10 @@ function App() {
       <Service />
       <Portfolio />
       {/* <Slider /> */}
+      <FeedBack />
+      <Pricing />
+      <Faq />
+      <ReachUs />
     </Router>
   )
 }

@@ -8,19 +8,19 @@ const portfolioData = [
         title: 'Bamstore'
     },
     {
-        id: 1,
+        id: 2,
         coverImage: './Bitmap.svg',
         category: 'web-design',
         title: 'Bamstore'
     },
     {
-        id: 1,
+        id: 3,
         coverImage: './Bitmap.svg',
         category: 'web-design',
         title: 'Bamstore'
     },
     {
-        id: 1,
+        id: 4,
         coverImage: './Bitmap.svg',
         category: 'web-design',
         title: 'Bamstore'

@@ -1,7 +1,7 @@
 import "./Portfolio.scss";
 import portfolioData from '../../data'
 import { HashLink as Link } from "react-router-hash-link";
-import connectUs from "../../assets/connet-us.png";
+import connectUs from "../../assets/connect-us.svg";
 import block from "../../assets/block.png";
 import Team from "../Team/Team";
 

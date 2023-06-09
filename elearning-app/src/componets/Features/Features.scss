@@ -32,12 +32,24 @@
             line-height: 20px;
 
             .features-details {
-                list-style-type: url("../../assets/check.svg");
+                display: flex;
+                align-items: center;
+                margin-bottom: 1em;
                 font-size: .8rem;
                 font-weight: 400;
 
                 // line-height: 15rem;
 
+            }
+            .features-details::before {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url('../../assets/check.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-right: 1em;
             }
         }
         .features-container-2 {
@@ -148,6 +160,7 @@
             }
             .features-2 {
                 flex-direction: row;
+                align-items:flex-end;
               
                 .feat-professional {
                     padding: 2em;
@@ -179,7 +192,7 @@
 
 @media only screen and (max-width:600px) {
     .features-container, .features-container-2 {
-        padding: 3em 2em;
+        padding: 0 2em;
     }
     .features-content {
         display: flex;

@@ -5,8 +5,7 @@
     color: var(--dark);
     display: flex;
     flex-direction: column;
-    .service-content {
-        // padding: .5em 1.5em;
+    .service-container {
         h4 {
             text-align: left;
             // font-size: .8rem;
@@ -139,6 +138,7 @@
             .service-2 {
                 display: flex;
                 flex-direction: row;
+                align-items:flex-end;
               
                 .feat-professional {
                     padding: 2em;

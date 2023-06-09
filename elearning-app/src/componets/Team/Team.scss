@@ -1,116 +1,122 @@
-
-
 .team-section {
-    background-color: var(--pry-color);
-    color: var(--light);
+    width: 100%;
     display: flex;
     flex-direction: column;
-    .team-container {
-        max-width: 1200px;
-        // padding: .5em 1.5em;
-        h4 {
-            text-align: left;
-            // font-size: .8rem;
-            line-height: 32px;
-            letter-spacing: 3px;
-        }
-    }
-    .team-cards {
+    align-items: center;
+    max-width: 1200px;
+    .splide__slide {
         display: flex;
-        align-items: center;
-        max-width: 1200px;
-        
-        
+        flex-direction: column;
+        // margin-right: 0 !important;
+    }
+}
+.team-container {
+   width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
 
-        .card {
-            position: relative;
-            background-color: black;
-            border: 2px solid var(--light);
-            border-radius: 1em;
-            // padding: 2em;
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
 
+.splide__pagination {
+    bottom: -2em !important;
+}
+
+.card-card {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    max-width: 375px;
+    border-radius: 2em !important;
+    .avatar {
+        object-fit: cover;
+        // width:375px;
+        height: inherit;
+        border-radius: 2em 2em 0 0;
+    }
+    .ellipse1 {
+        position: absolute;
+        width: 80px;
+        top: 0;
+        border-radius: 2em;
+    }
+    .ellipse2 {
+        position: absolute;
+        width: 80px;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 0;
+    }
+
+    .card-info {
+        border-radius:2em;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 274px;
+        background: rgba(255, 237, 237, 0.662);
+
+
+        .arrow-bg {
+            position: absolute;
+            border-radius: 60%;
+            left: 50%;
+            right: 50%;
+            transform: translate( -50%, -20px);
+            height: 40px;
+            width: 40px;
+            background: var(--pry-color);
             img {
-                max-width: 300px;
-                object-fit: contain;
-                border-radius: 1em;
-            }
-            .card-info {
                 position: absolute;
-                width: 100%;
-                bottom: 2em;
-                background-color: rgb(0, 0, 0);
-                display: flex;
-                flex-direction: column;
-                padding: 2em;
+                top: 15px;
+                left: 12px;
+                width: 15px;
+            }
+        }
+        .infs {
+            margin-left: 1em;
+            color: var(--dark);
+            position: absolute;
+            top: 3em;
 
-                h2 {
-                    font-size: 2rem;
-                    margin-bottom: .5em;
+            h2{
+                font-size: 2em;
+            }
+            .design-icon {
+                width: 40px;
+                top: 0;
+                right: 1em;
+                position: absolute;
+            }
+
+            .expert {
+                margin-right: 1em;
+                margin-top: 1em;
+                display: flex;
+                gap: 1em;
+                justify-content:flex-start;
+                flex-wrap: wrap;
+
+                .expert-in {
+                    background-color: var(--pry-color);
+                    color: var(--light);
+                    border-radius: .5em;
+                    padding: .5em;
                 }
             }
-
-
-        }
-    }
-
-}
-
-
-@media screen and (min-width: 600px){
-    .team-section {
-        padding: 4em 0;
-        // place-items: center;
-        justify-content: center;
-  
-
-        .team-container {
-            padding: 1em 2em;
-            width: 100%;
-            max-width: 1200px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 2em;
-            h2 {
-                font-size: 3.5rem;
-                font-weight: 700;
-            }
-            
-
-        }
-        .team-cards {
-            
-            padding: 1em 2em;
-            gap:1em;
-        }
-        
-    }
-    
-    
-}
-
-@media only screen and (max-width:600px) {
-    .team-section {
-        padding: 2em 2em;
-    }
-    .team-container {
-        padding: 3em 2em;
-    }
-
-    .team-cards {
-        padding: 1em;
-        gap: 2em;
-        flex-direction: column;
-        overflow-x :scroll;
-
-        .card {
-            width: auto;
         }
     }
 }
+
+@media only screen and (min-width:600px) {
+    .card-info {
+        height: 300px !important;
+    }
+}
+
+
+
 
 
 //founders styling
