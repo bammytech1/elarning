@@ -7,7 +7,6 @@ import playVideo from "../../assets/music-preview.mp4"
 import playVid from "../../assets/pexels-mikhail-nilov-7534244-1920x1080-25fps.mp4"
 import { motion } from "framer-motion";
 import { useState } from "react";
-// import Videoplay from "../../videoplayer/Videoplay";
 
 const cardVariants = {
   offscreen: {

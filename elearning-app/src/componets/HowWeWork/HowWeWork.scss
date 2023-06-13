@@ -173,11 +173,25 @@
     //     flex-direction: column;
     //     gap: 1em;
     // }
+    .video-show {
+        
+        width: 100%;
+        max-width: 350px ;
+        height: 300px;
+        margin-top: 12em;
+
+        iframe {
+            width: 100%;
+            max-width: 400px;
+            height: 250px;
+        }
+        
+    }
 
 }
 .video-show {
     position: absolute;
-    background-color: aquamarine;
+    // background-color: aquamarine;
     height: 562.50px;
     width: 1000px;
     top: 50%;
@@ -187,6 +201,7 @@
 
     video {
         position: relative;
+        object-fit: contain;
     }
     .btn1 {
         position: absolute;
